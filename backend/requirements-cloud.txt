@@ -1,0 +1,7 @@
+-r requirements.txt
+boto3>=1.35,<2
+azure-identity>=1.19,<2
+azure-monitor-query>=2.0,<3
+google-cloud-logging>=3.11,<4
+openai>=1.75,<3
+openai>=1.75,<3

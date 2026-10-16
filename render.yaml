@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: logfix-ai-v2
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: PUBLIC_DEMO_ONLY
+        value: "true"
+      - key: ENABLE_LLM
+        value: "false"
